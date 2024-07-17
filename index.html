@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Atlas housing</a>
+            <ul>
+                <li><a href="#features">Características</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Bienvenido a MiSitio</h1>
+            <p>La mejor solución para tus necesidades.</p>
+            <a href="#cta" class="cta-button">Empezar Ahora</a>
+        </section>
+        <section id="features">
+            <h2>Características</h2>
+            <p>Descubre todo lo que ofrecemos.</p>
+            <!-- Agrega más contenido aquí -->
+        </section>
+        <section id="about">
+            <h2>Acerca de Nosotros</h2>
+            <p>Conoce más sobre nuestra historia y misión.</p>
+            <!-- Agrega más contenido aquí -->
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
+            <!-- Agrega más contenido aquí -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MiSitio. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
